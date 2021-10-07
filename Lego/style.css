@@ -1,0 +1,445 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /*background: #964444;*/
+}
+
+/*CSS Oliver, Filip, Kenton*/
+
+.body {
+    background: #964444;
+}
+
+
+.bigbar{
+    display: flex;
+    font-size: 40px;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+a:link{
+    color: seashell;
+    text-decoration: none;
+}
+
+a:visited{
+    color: seashell;
+}
+
+a:hover{
+    color: black;
+}
+
+h3
+{
+    color: seashell;
+}
+ 
+.main-text{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+    padding-top: 20vh;
+}
+ 
+.main-text h1{
+    font-size: 70px;
+    font-weight: 500;
+    color: seashell;
+    text-align: center;
+}
+ 
+.text1 h2{
+    font-size: 65px;
+    font-weight: 200;
+    color: seashell;
+	position: absolute;
+    top: 30%;
+    left: 20%;
+}
+ 
+.text2 h3{
+    font-size: 25px;
+    font-weight: 200;
+    color: seashell;
+ 
+	position: absolute;
+    top: 50%;
+    left: 20%;
+}
+ 
+.arrow {
+    width: 75%;
+    height: auto;
+    padding-top: 17%;
+    padding-left: 60%;
+}
+
+
+.BATH {
+    width: 35%;
+    height: 35%;
+    left: 0;
+}
+
+
+.search_bar{
+    padding-top: 50px;
+    
+}
+ 
+.search_bar form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: seashell;
+    font-size: 20px;
+    
+}
+ 
+.search_bar input
+{
+    width: 30%;
+    height: 60px;
+    border: none;
+    background: seashell;
+}
+ 
+.search_bar button
+{
+    height: 60px;
+    border: none;
+    background: black;
+    color: seashell;
+    width: 15%;
+    cursor: pointer;
+    
+}
+
+.tabletwo {
+    color: seashell;
+    font-size: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabletwo th, td {
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.tableone {
+   
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+   
+    align-items: center;
+
+    font-size: 20px;
+    
+    width: 100vw;
+}
+
+
+.table_cloth 
+{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.set_res
+{
+    align-content: center;
+    justify-content: center;
+}
+
+.butt {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border: none;
+    color: seashell;
+    width: 15vw;
+    height: 15vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 1.3vw;
+    background-color: transparent;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.butt p{
+    background-color: transparent;
+}
+
+.butt img {
+    background-color: transparent;
+}
+
+
+.butt:hover
+{
+    cursor: pointer;
+    background-color: black;
+}
+
+.pages
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+/* CSS animationer (Filip) */ 
+
+/* Expandera huvudtiteln på första sidan med en 3D box.(Filip) */
+@keyframes extend
+{
+    0% {
+        box-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black, 0 0 black, 0 0 black, 0 0 black, 0 0 black, 0 0 black, 0 0 black;
+        box-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black, 0 0 black, 0 0 black, 0 0 black, 0 0 black, 0 0 black, 0 0 black;
+        transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0);
+    }
+
+    100% {
+        box-shadow: 1px -1px black, 2px -2px black, 3px -3px black, 4px -4px black, 5px -5px black, 6px -6px black, 7px -7px black, 8px -8px black, 9px -9px black, 10px -10px black;
+        box-shadow: 1px -1px black, 2px -2px black, 3px -3px black, 4px -4px black, 5px -5px black, 6px -6px black, 7px -7px black, 8px -8px black, 9px -9px black, 10px -10px black;
+        transform: translateX(-8px) translateY(8px);
+        transform: translateX(-8px) translateY(8px);
+    }
+}
+
+h1
+{
+    animation-name: extend;
+    animation: extend cubic-bezier(0.5, 0.1, 1.0, 1.0) both;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+
+/* Expandera och fade till grey på sök knapp (Filip)*/ 
+.search_bar button:hover 
+{
+    width: 320px;
+    background-color: grey;
+    transition: 0.5s;
+}
+
+
+/* Ändra färg (Oliver/Filip)*/ 
+a:hover {
+    color: black;
+    font-size: 20px;
+}
+
+/* Förstora set namn när man håller över dem (Filip)*/ 
+.butt:hover {
+    
+    transition: 0.5s;
+    font-size: 17px;
+}
+
+
+/* Förstora AZ och ZA knapparna (Filip)*/ 
+.bigbar a:hover {
+    color: grey;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+/* Förstora next knapp (Filip)*/ 
+a:hover {
+    color: grey;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+/* read more pil (Filip)*/
+.pil {
+    position: relative;
+    display: inline-block;
+    padding-left: 47%;
+    padding-top: 30px;
+}
+
+.pil h2 {
+    background-color: transparent;
+    color: seashell;
+
+}
+
+/* Text ruta med info + animationer (Filip)*/
+
+.info {
+    display: none;
+    position: absolute;
+    background-color: #964444;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: seashell;
+    min-width: 300px;
+    padding: 12px 16px;
+    z-index: 1;
+    -webkit-transition: line-height 0.1s, height 0.1s, opacity 0.1s, border-radius 0.4s, width 1s;
+}
+
+.info p{
+    background-color: transparent;
+}
+
+.pil:hover .info {
+    display: block;
+}
+
+
+
+/* Antal reuslts och tid det tog att genomföra query (Filip)*/
+
+
+.number {
+   
+    color: seashell;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    
+}
+
+/*Mobilanpassning Oliver*/
+
+@media(max-width: 992px)
+{
+    .bigbar {
+        
+        font-size: 25px;
+        
+        width: 60%;
+    }
+
+    .main-text {
+        
+       
+        width: 100%;
+        padding-top: 30vh;
+    }
+
+    .main-text h1 {
+        font-size: 30px;
+        font-weight: 500;
+       
+    }
+
+    .search_bar {
+        padding-top: 25px;
+    }
+
+    .search_bar form {
+        width: 100%;
+           
+        font-size: 10px;
+    }
+
+    .search_bar input {
+        width: 50%;
+        height: 30px;
+        font-size: 10px;
+            
+    }
+
+    .search_bar button {
+        height: 30px;
+        border: none;
+           
+        width: 15%;
+            
+    }
+
+    .pil h2 {
+        font-size: 20px;
+        color: transparent;
+    }
+
+    .pil {
+       
+        padding-left: 20%;
+        
+    }
+
+    .pil:hover .info {
+        display: none;
+    }
+
+      
+
+    .tableone {
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+        width: 100vw;
+    }
+
+    .butt {
+        margin-left: 4vw;
+        margin-right: 4vw;
+       
+        width: 30vw;
+        height: 30vw;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+        font-size: 2.3vw;
+        
+    }
+
+    .text1 h2 {
+        font-size: 45px;
+        
+        
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+
+    .text2 h3 {
+        font-size: 15px;
+        
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
+
+    .BATH {
+        width: 35%;
+        
+        padding-top: 25vh;
+        
+        left: 0;
+    }
+
+    .arrow {
+        width: 75%;
+        height: auto;
+        padding-top: 40vh;
+        padding-left: 30%;
+    }
+
+
+}
+
+
